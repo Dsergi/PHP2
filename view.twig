@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Галерея</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    {% include "header.twig" %}
+<main> 
+    {% for id in qr %}
+        <div class="gallery"><img src="{{ id.address_big|escape }}"/>      
+        </div>
+    {% endfor %}
+    <a href="index.php">Назад</a>        
+</main>
+    {% include "footer.twig" %}
+</body>
+</html>
