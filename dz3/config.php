@@ -1,5 +1,4 @@
 <?php
-
 /* DB config */
 const HOST = "localhost";
 const USER = "mysql";

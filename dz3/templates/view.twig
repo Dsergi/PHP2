@@ -7,19 +7,14 @@
     <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-<header>
     {% include "header.twig" %}
-</header>
 <main> 
     {% for id in qr %}
-    <div class="gallery"><img src="{{ id.address_big|escape }}"/>      
-    </div>
+        <div class="gallery"><img src="{{ id.address_big|escape }}"/>      
+        </div>
     {% endfor %}
-    <a href="index.php">Назад</a>
-        
+    <a href="index.php">Назад</a>        
 </main>
-<footer>
     {% include "footer.twig" %}
-</footer>
 </body>
 </html>

@@ -4,7 +4,7 @@ class connectDb  {
 	
 	protected $connection;
 
-   function __construct() 
+   function __construct()
    {
 		$this->connection = new mysqli(HOST, USER, PASS, DB);
 
@@ -15,18 +15,15 @@ class connectDb  {
 	}
 	function query($sql)
 	{		
-			$query = $this->connection->query($sql);
+		$query = $this->connection->query($sql);
 
-			$data = [];
+		$data = [];
 
-			while ($row = $query->fetch_object()) {
-					$data[] = $row;
-				}
+		while ($row = $query->fetch_object()) {
+				$data[] = $row;
+			}
+		$query->close();
 
-				$query->close();
-
-			
-
-			return $data;
+		return $data;
 	}
 }
