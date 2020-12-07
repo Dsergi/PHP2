@@ -1,0 +1,52 @@
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+main {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 950px ;	
+}
+
+.gallery {
+	margin-top: 5px;
+	border: 1px solid black;
+	width: 300px;
+}
+.userComments {
+	width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;	
+	flex-wrap: wrap;
+	
+}
+
+form {
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 950px ;
+}
+
+textarea {
+	height: 100px;
+	width: 940px;
+}
+.galleryBig  {
+	border: 1px solid black;
+
+} 
+.galleryBig  h3 {
+	border: 1px solid black;
+
+}
+

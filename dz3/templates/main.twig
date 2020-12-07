@@ -1,0 +1,5 @@
+{% for img in qr %}
+    <div class="gallery"><a rel="gallery" class="photo" href="view.php?action=open&id={{ img.id|escape }}" >
+    <img src="{{ img.address_small|escape }}"/></a>          
+    </div>
+{% endfor %}
