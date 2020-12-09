@@ -10,7 +10,7 @@
     {% include "header.twig" %}
 <main> 
     {% for id in qr %}
-        <div class="gallery"><img src="{{ id.address_big|escape }}"/>      
+        <div class="view"><img src="{{ id.address_big|escape }}"/>      
         </div>
     {% endfor %}
     <a href="index.php">Назад</a>        
