@@ -10,8 +10,7 @@ $loadSize = 3;
 
 if (isset($_GET['from'])) {
     $content = DB::getInstance()->getTableDataPart(DB::TABLE_GOODS, $_GET['from'] , $loadSize);
-    
-     
+         
     echo $twig->render('content.twig', [
         'item' => $content,        
     ]);
