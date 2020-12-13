@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>ВелоShop</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    {% include "header.twig" %}
+<main> 
+    {% for id in item %}
+        <div class="view">
+        <h4>{{ id.name|escape }}
+        <img src="{{ id.address_big|escape }}"/>      
+        </div>
+    {% endfor %}
+    <a href="index.php">Назад</a>        
+</main>
+    {% include "footer.twig" %}
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
